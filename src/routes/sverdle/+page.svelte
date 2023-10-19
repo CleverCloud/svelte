@@ -211,10 +211,21 @@
 		justify-content: center;
 		gap: 1rem;
 		flex: 1;
+		position: relative;
 	}
+	form::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value (0.5) to set the opacity */
+    z-index: -1;
+}
 
 	.how-to-play {
-		color: var(--color-text);
+		color: white;        
 	}
 
 	.how-to-play::before {
@@ -244,7 +255,9 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
+		position: relative;
 	}
+	
 
 	.grid .row {
 		display: grid;

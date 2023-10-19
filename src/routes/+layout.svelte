@@ -21,6 +21,19 @@
 		flex-direction: column;
 		min-height: 100vh;
 	}
+	/*.app::before {
+		#content: "";
+		#position: absolute;
+		#top: 0;
+		#left: 0;
+		#width: 100%;
+		#height: 100%;
+		#background-image: url('src/lib/images/background.png');
+		#background-repeat: no-repeat;
+		#background-size: cover;
+		#opacity: 0.25;
+	}*/
+
 
 	main {
 		flex: 1;
@@ -39,7 +52,18 @@
 		justify-content: center;
 		align-items: center;
 		padding: 12px;
+		position: relative;
 	}
+	footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: -1;
+}
 
 	footer a {
 		font-weight: bold;

@@ -1,7 +1,7 @@
 <script>
 	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
+	import welcome from '$lib/images/clever-logo.webp';
+	import welcome_fallback from '$lib/images/clever-logo.png';
 </script>
 
 <svelte:head>
@@ -14,15 +14,17 @@
 		<span class="welcome">
 			<picture>
 				<source srcset={welcome} type="image/webp" />
-				<img src={welcome_fallback} alt="Welcome" />
+				<a href="https://clever-cloud.com">
+				<img src={welcome_fallback} alt="Clever Cloud logo" />
+				</a>
 			</picture>
 		</span>
 
-		to your new<br />SvelteKit app
+		Welcome to this <br />SvelteKit kawaï app
 	</h1>
 
 	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
+		a demo app for <strong>Clever Cloud</strong>
 	</h2>
 
 	<Counter />
@@ -35,7 +37,18 @@
 		justify-content: center;
 		align-items: center;
 		flex: 0.6;
+		position: relative;
 	}
+	section::before {
+	  content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.9);
+      z-index: -1;
+    }
 
 	h1 {
 		width: 100%;
@@ -43,17 +56,18 @@
 
 	.welcome {
 		display: block;
-		position: relative;
 		width: 100%;
-		height: 0;
+		height: 100%;
 		padding: 0 0 calc(100% * 495 / 2048) 0;
+		
 	}
 
 	.welcome img {
 		position: absolute;
 		width: 100%;
-		height: 100%;
+		height: auto;
 		top: 0;
 		display: block;
+		
 	}
 </style>
