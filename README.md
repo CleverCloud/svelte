@@ -7,7 +7,7 @@ This is a Svelte project by Clever Cloud, powered by [`create-svelte`](https://g
 
 You don"t need to build this app locally before deploying on Clever Cloud.
 
-From the Clever Cloud Console: 
+From the Clever Cloud Console:
 
 1. Clone this repository
 2. Click on "Create" > "an application"
