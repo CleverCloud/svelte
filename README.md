@@ -20,4 +20,4 @@ From the Clever Cloud Console:
 
 TIP: Use `git push clever main:master` if you encounter git references errors.
 
-[📖 Check our Node.js documentation](https://www.clever-cloud.com/doc/getting-started/by-language/node/)
+[📖 Check our Node.js documentation](https://developers.clever-cloud.com/doc/applications/javascript/nodejs/)
